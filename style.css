@@ -4,14 +4,9 @@
     padding: 0;
 }
 
-.flex-container{
-    display: flex;
-    border: 2px solid black;
-}
-
 .navbar{
-    flex : 1 1 0;
     background-color: darkgreen;
+    padding-bottom: 6px;
 }
 
 .nav-link{
@@ -23,6 +18,16 @@
 
 .active{
     display: flex;
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
 }
 
 .logo, .nav-items a{
@@ -44,9 +49,66 @@
 
 .toggle-navbar{
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 15px;
     font-size: 1.5em;
     cursor: pointer;
     color: white;
+}
+
+.color-nav{
+    display: flex;
+    margin-top: 50px;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.color-spot{
+    width: 50px;
+    height: 27px;
+    border-radius: 3px;
+    background-color: darkkhaki;
+}
+
+.colorPicker{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 640px) {
+    .navbar{
+        padding-bottom: 0;
+    }
+    .toggle-navbar{
+        display: none;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    .nav-link{
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .nav-items{
+        margin: 0px;
+    }
+
+    .nav-items a{
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .nav-items a:hover{
+        background-color: white;
+        color: darkgreen;
+    }
 }
