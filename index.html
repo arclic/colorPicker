@@ -16,24 +16,28 @@
         <span class="toggle-navbar" id="js-toggle-navbar"><i class="fa fa-bars"></i></span>
         <a href="#" class="logo">colorPicker</a>
         <ul class="nav-link">
-            <li class="nav-items"><a href="#">upLoad</a></li>
-            <li class="nav-items"><a href="#">colorPicker</a></li>
+            <li class="nav-items"><a href="#">ONLINE</a></li>
+            <li class="nav-items"><a href="#">OFFLINE</a></li>
         </ul>
     </nav>
 
-    <!-- upLoad -->
-
-    <!-- RGB colorPicker -->
-    <nav class="color-nav">
-        <div class="color-spot"></div>
-        <div class="color-label"><h4>Hex</h4></div>
-        <div class="color-hex"> #FFFFFF </div>
-    </nav>
-    <div class="colorPicker" id="js-picker">
-        <div class="twod"></div>
-        <div class="oned"></div>
+    <!-- online -->
+    <div class="online-flexbox">
+        <form action="" name="imageForm">
+            <label for="url">Image URL: </label>
+            <input type="url" id="url" name="url" class="url">
+            <input type="submit" value="submit">
+        </form>
+        <canvas width="300" height="300" id="canvas_picker"></canvas>
+        <div class="rgb-flexbox">
+            <div id="hex">HEX: <input type="text"></input></div>
+            <div id="rgb">RGB: <input type="text"></input></div>
+        </div>
     </div>
 
+    <!-- offline -->
+
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="online.js"></script>
 </body>
 </html>

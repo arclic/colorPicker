@@ -77,6 +77,28 @@
     margin-top: 15px;
 }
 
+.online-flexbox{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+form[name="imageForm"]{
+    margin: 0 auto;
+}
+
+.url, input[type="text"]{
+    width: 100px;
+}
+
+.rgb-flexbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#hex { margin-right : 10px;}
+
 @media screen and (min-width: 640px) {
     .navbar{
         padding-bottom: 0;
@@ -110,5 +132,9 @@
     .nav-items a:hover{
         background-color: white;
         color: darkgreen;
+    }
+
+    .url{
+        width: 300px;
     }
 }
