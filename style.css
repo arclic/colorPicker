@@ -56,48 +56,33 @@
     color: white;
 }
 
-.color-nav{
-    display: flex;
-    margin-top: 50px;
-    padding: 0 30px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.color-spot{
-    width: 50px;
-    height: 27px;
-    border-radius: 3px;
-    background-color: darkkhaki;
-}
-
-.colorPicker{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-}
-
-.online-flexbox{
-    display: flex;
-    margin-top: 20px;
+.con-flex{
+    display: none;
     flex-direction: column;
 }
 
-form[name="imageForm"]{
-    margin: 0 auto;
-}
-
-.url, input[type="text"]{
-    width: 100px;
-}
-
-.rgb-flexbox{
+.activeFlex{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
 }
 
-#hex { margin-right : 10px;}
+.urlInput{
+    margin: 15px auto;
+    width: 300px;
+}
+
+.fileInput {
+    margin: 15px auto;
+}
+
+.rgbValue{
+    margin: 5px auto;
+    font-weight: bold;
+}
+
+.canv {
+    margin: 15px auto;
+    border: 1px solid black;
+}
 
 @media screen and (min-width: 640px) {
     .navbar{
@@ -132,9 +117,5 @@ form[name="imageForm"]{
     .nav-items a:hover{
         background-color: white;
         color: darkgreen;
-    }
-
-    .url{
-        width: 300px;
     }
 }
