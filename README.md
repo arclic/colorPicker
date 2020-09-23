@@ -11,6 +11,8 @@ https://arclic.github.io/colorPicker
 * CSS3
 * Vanilla.js
 
+## Screenshots
+![screenshots1](./screenshots/screen1.PNG)
 
 ## Description
 use `<canvas>` element in HTML5 and getImageData method
